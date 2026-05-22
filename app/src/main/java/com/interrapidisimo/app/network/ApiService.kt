@@ -10,10 +10,6 @@ import retrofit2.http.GET
 import retrofit2.http.HeaderMap
 import retrofit2.http.POST
 
-/**
- * Define los endpoints del API de parámetros.
- * Retrofit lee estas anotaciones y genera el código HTTP automáticamente.
- */
 interface ParametrosApiService {
 
     @GET("api/ParametrosFramework/ConsultarParametrosFramework/VPStoreAppControl")
@@ -26,9 +22,6 @@ interface ParametrosApiService {
     suspend fun getLocalidades(): Response<List<Localidad>>
 }
 
-/**
- * Define el endpoint de autenticación.
- */
 interface SeguridadApiService {
 
     @POST("api/Seguridad/AuthenticaUsuarioApp")
