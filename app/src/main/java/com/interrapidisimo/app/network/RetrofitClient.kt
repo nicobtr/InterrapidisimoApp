@@ -6,11 +6,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-/**
- * Singleton que configura los clientes HTTP para las dos APIs.
- * Un "singleton" significa que solo existe una instancia en toda la app,
- * lo que evita crear múltiples conexiones innecesarias.
- */
 object RetrofitClient {
 
     private const val BASE_URL_PARAMETROS =
